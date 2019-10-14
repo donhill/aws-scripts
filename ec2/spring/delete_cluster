@@ -1,0 +1,1 @@
+ecs-cli down --force --cluster ec2-spring-cluster --region us-east-1

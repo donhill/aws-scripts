@@ -1,0 +1,13 @@
+version: '3'
+services:
+  spring-boot:
+    image: springio/gs-spring-boot-docker
+    ports:
+      - "8080:8080"
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: us-east-1
+        awslogs-group: "log-group"
+        #links:
+        #- mysql
